@@ -2,7 +2,7 @@
 <suite name="parasoft">	
 	<test name="base">
 		<classes>
-			<class name="base.TestBase.java"></class>
+			<class name="base.TestBase"></class>
 		</classes>
 	</test>
 </suite>

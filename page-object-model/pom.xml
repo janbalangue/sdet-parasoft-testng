@@ -22,7 +22,7 @@
 
 	<profiles>
 		<profile>
-			<id>parabank-tests</id>
+			<id>parasoft-tests</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -31,20 +31,25 @@
 						<version>2.12.4</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+								<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-						</configuration>
-					</plugin>
-					<plugin>
-						<artifactId>maven-compiler-plugin</artifactId>
-						<version>3.8.1</version>
-						<configuration>
-							<release>17</release>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
 	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>17</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

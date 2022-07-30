@@ -27,4 +27,5 @@ page-object-model/.classpath
 page-object-model/.project
 page-object-model/.settings/
 page-object-model/target/
+page-object-model/test-output/
 .DS_Store
