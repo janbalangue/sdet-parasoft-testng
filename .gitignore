@@ -21,3 +21,10 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# local stuff
+page-object-model/.classpath
+page-object-model/.project
+page-object-model/.settings/
+page-object-model/target/
+.DS_Store
