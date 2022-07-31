@@ -39,31 +39,31 @@ public class HomePage {
 	@FindBy(css = "input[value='Log In']")
 	WebElement loginElement;
 
-	public void clickRegister() {
+	public synchronized void clickRegister() {
 		registerElement.click();
 	}
 
-	public void clickAboutUs() {
+	public synchronized void clickAboutUs() {
 		aboutUsElement.click();
 	}
 
-	public void clickServices() {
+	public synchronized void clickServices() {
 		servicesElement.click();
 	}
 
-	public void clickProducts() {
+	public synchronized void clickProducts() {
 		productsElement.click();
 	}
 
-	public void clickLocations() {
+	public synchronized void clickLocations() {
 		locationsElement.click();
 	}
 
-	public void clickAdmin() {
+	public synchronized void clickAdmin() {
 		adminElement.click();
 	}
 
-	public void login(String username, String password) {
+	public synchronized void login(String username, String password) {
 		usernameElement.sendKeys(username);
 		passwordElement.sendKeys(password);
 		loginElement.click();
