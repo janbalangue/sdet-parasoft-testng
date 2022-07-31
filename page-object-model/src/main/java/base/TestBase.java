@@ -18,11 +18,10 @@ public class TestBase {
 	public void setup() {
 		File chromeFile = new File(System.getProperty("user.dir") + "/src/main/java/drivers/chromedriver");
 		System.setProperty("webdriver.chrome.driver", chromeFile.getAbsolutePath());
-		File firefoxFile = new File(System.getProperty("user.dir") + "/src/main/java/drivers/geckodriver");
-		System.setProperty("webdriver.gecko.driver", firefoxFile.getAbsolutePath());
 		driver = new ChromeDriver();
 		Reporter.log("driver created");
 		driver.get("https://parabank.parasoft.com/parabank/index.htm");
+		Reporter.log("parabank.parasoft.com loaded");
 		driver.manage().window().maximize();
 	}
 

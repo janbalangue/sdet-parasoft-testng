@@ -5,4 +5,9 @@
 			<class name="base.TestBase"></class>
 		</classes>
 	</test>
+	<test name="home page test">
+		<classes>
+			<class name="testcases.HomePageTest"></class>
+		</classes>
+	</test>
 </suite>
